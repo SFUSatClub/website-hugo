@@ -1,18 +1,18 @@
-	<section id="fh5co-home" data-section="home">
+	<section id="fh5co-home" data-section="home", style='height: 500px'>
 		<!-- <div class="gradient"></div> -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">{{ with .Site.Params.about.title }}{{ . | markdownify }}{{ end }}</h2>
+						<h2 class="to-animate">{{ with .Site.Params.advisors.title }}{{ . | markdownify }}{{ end }}</h2>
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2 subtext to-animate">
-								<h3>{{ with .Site.Params.about.description }}{{ . | markdownify }}{{ end }}</h3>
+								<h3>{{ with .Site.Params.advisors.description }}{{ . | markdownify }}{{ end }}</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-				{{ range .Site.Params.about.item }}
+				{{ range .Site.Params.advisors.item }}
 					<div class="col-md-4">
 						<div class="fh5co-person text-center to-animate">
 							<figure><img src="images/{{ .img }}" alt="{{ .alt }}"></figure>
@@ -25,8 +25,8 @@
 				</div>
 
 
-				<div class="row">
-				{{ range .Site.Params.about.item1 }}
+<!-- 				<div class="row">
+				{{ range .Site.Params.advisors.item1 }}
 					<div class="col-md-4">
 						<div class="fh5co-person text-center to-animate">
 							<figure><img src="images/{{ .img }}" alt="{{ .alt }}"></figure>
@@ -37,7 +37,7 @@
 					</div>
 				{{ end }}
 				</div>
-
+ -->
 
 
 			</div>
