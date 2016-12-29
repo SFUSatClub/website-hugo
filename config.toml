@@ -49,7 +49,7 @@ theme = "hugo-elate-theme"
   # Hero section
   [params.hero_projects]
     title = "Projects"
-    subtitle = "We are working on several projects Our main project is a 3U cubesat, but we also build and launch weather balloons,train future astronauts, do outreach and much more. </a>"
+    subtitle = "We are working on many projects. Our main project is a 3U cubesat, but we also build and launch weather balloons, train future astronauts, do outreach and much more. </a>"
 
 
 
@@ -59,7 +59,7 @@ theme = "hugo-elate-theme"
 
   [[params.intro.item]]
     title = "Cubesat"
-    description = "We are building a 3U cubesat to participate in the Canadian Satellite Design CHallenge."
+    description = "We are building a 3U cubesat to participate in the Canadian Satellite Design Challenge."
     url = "#"
     button = "SFUSAT"
     icon = "icon-rocket"
@@ -83,7 +83,7 @@ theme = "hugo-elate-theme"
 
   [params.intro.video]
     enable = true
-    title = "Launch of our weather balloon Latobius"
+    title = "Launch of the weather balloon Latobius"
     icon = "icon-play2"
     url = "https://www.youtube.com/watch?v=2HqLlPgh8nQ"
 
@@ -92,7 +92,7 @@ theme = "hugo-elate-theme"
   [params.work]
     enable = true
     title = "Subsystems"
-    description = "Learn more about our teams:."
+    description = "Learn more about our teams:"
     footertext = ''
 
     [[params.work.row]]
@@ -162,55 +162,112 @@ theme = "hugo-elate-theme"
   [params.services]
     enable = true
     title = "Services"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "We love collaboration. Get in touch with us to work on any of the following."
 
     [[params.services.item]]
-      title = "Brand &amp; Strategy"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-anchor"
+      title = "Education &amp; Outreach"
+      description = "Inspiring and education is our main goal. We have organized and participated in countless outreach opportunities. "
+      icon = "icon-book-open"
 
     [[params.services.item]]
-      title = "Web &amp; Interface"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-layers2"
+      title = "Satellite Design"
+      description = "While we are only starting we have already learned a lot about what it takes to build a satellite."
+      icon = "icon-rocket"
     [[params.services.item]]
-      title = "Photo &amp; Video"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-video2"
+      title = "Weather Balloons"
+      description = "We've already built and launched Latobius - a scientific and technology demostration weather balloon and more weather balloon launches are in the works."
+      icon = "icon-globe"
 
-      [[params.services.item]]
-      title = "CMS &amp; eCommerce"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
-      icon = "icon-monitor"
+  # Sponsorship section
+  [params.sponsorship]
+    enable = true
+    title = "Sponsorship"
+    description = "Help us make our projects happen. We are looking for collaborations, sponsorship and donations."
+
 
   # About section
   [params.about]
     enable = true
-    title = "About"
-    description = "We are a group of people excited about space exploration and engineering and we want to be a part of the upcoming space revolution."
+    title = "Executive Team"
+    description = "We are a group of people excited about space exploration and engineering. We want to be a part of the upcoming space revolution."
 
-#    [[params.about.item]]
-#      name = "Satellite"
-#      position = "3U Cubesat"
-#      description = "We are building a 3U cubesat to participate in the Canadian Satellite Design Challenge"
-#      img = "person1.jpg"
-#      alt = "Person1"
-
-
-#    [[params.about.item]]
-#      name = "Weather Balloon"
-#      position = "High-altitude weather balloons"
-#      description = "We've launched a weather balloon and plan to launch more to test the satellite and perform scientific experiments."
-#      img = "person2.jpg"
-#      alt = "Person2"
+    [[params.about.item]]
+      name = "Tim Nosov"
+      position = "President"
+      description = ""
+      img = "person1.jpg"
+      alt = "Person1"
 
 
-#    [[params.about.item]]
-#      name = "Other"
-#      position = "Other Projects"
-#      description = "We run workshops, amateur radio club, astronaut corps and many more initiatives"
-#      img = "person3.jpg"
-#      alt = "Person3"
+    [[params.about.item]]
+      name = "Jordan Lui"
+      position = "Vice President"
+      description = ""
+      img = "person2.jpg"
+      alt = "Person2"
+
+
+    [[params.about.item]]
+      name = "Tobi Shires Nakamura"
+      position = "CTO"
+      description = ""
+      img = "person3.jpg"
+      alt = "Person3"
+
+    [[params.about.item1]]
+      name = "Parsian Asgari"
+      position = "CSO"
+      description = ""
+      img = "person1.jpg"
+      alt = "Person1"
+
+
+    [[params.about.item1]]
+      name = "Rich Arthurs"
+      position = "Principal Engineer"
+      description = ""
+      img = "person2.jpg"
+      alt = "Person2"
+
+
+    [[params.about.item1]]
+      name = "Steven Huang"
+      position = "Principal Engineer"
+      description = ""
+      img = "person3.jpg"
+      alt = "Person3"
+
+
+
+  # Advisors section
+  [params.advisors]
+    enable = true
+    title = "Advisors"
+    description = "We are proud to be supported by experts in industry and academia."
+
+    [[params.advisors.item]]
+      name = "Dr. Oldknow"
+      position = "Strategic Advisor"
+      description = ""
+      img = "person1.jpg"
+      alt = "Person1"
+
+
+    [[params.advisors.item]]
+      name = "Dr. Murzuk"
+      position = "Advisor"
+      description = ""
+      img = "person2.jpg"
+      alt = "Person2"
+
+
+    [[params.advisors.item]]
+      name = ""
+      position = "Advisor"
+      description = ""
+      img = "person3.jpg"
+      alt = "Person3"
+
 
   # Counters section
   [params.counters]
@@ -223,16 +280,16 @@ theme = "hugo-elate-theme"
       icon = "icon-briefcase"
       from = 0
       to = 1
-      interval = 1
-      speed = 5000
+      interval = 50
+      speed = 10000
 
     [[params.counters.item]]
       description = "Lines of code"
       icon = "icon-code"
       from = 0
-      to = 2343409
+      to = 75374
       interval = 50
-      speed = 5000
+      speed = 10000
 
     [[params.counters.item]]
       description = "People"
@@ -240,7 +297,7 @@ theme = "hugo-elate-theme"
       from = 0
       to = 50
       interval = 50
-      speed = 5000
+      speed = 10000
 
     [[params.counters.item]]
       description = "Projects"
@@ -248,21 +305,21 @@ theme = "hugo-elate-theme"
       from = 0
       to = 5
       interval = 50
-      speed = 5000
+      speed = 10000
 
   # Contact section
   [params.contact]
     enable = true
     map = true
     title = "Get in touch"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "Interested in joining? Have a payload idea? Want to support us? Get in touch with us."
     
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "5555 Love Paradise 56 New Clity 5655, <br> Excel Tower United Kingdom"],
-        ["icon-phone", "(123) 465-6789"],
-        ["icon-envelope", "info@freehtml5.co"],
-        ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>']
+        ["icon-home", "8888 University Dr, Burnaby, BC V5A 1S6, <br> Canada"],
+        ["icon-phone", "(604) 3541957"],
+        ["icon-envelope", "tnosov@sfu.ca"],
+        ["icon-globe", '<a href="sfusat.com/" target="_blank">sfusat.com</a>']
       ]
 
     name = "Name"
@@ -274,4 +331,4 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Elate Free HTML5. All Rights Reserved. <br>Created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a>, <a href="http://plmd.me/" target="_blank">plmd.me</a> <br>Hugo port by: <a href="https://github.com/saey55" target="_blank">saey55</a>'
+    copyright = '&copy; SFU Satellite Design Club. <br>Theme created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a>, <a href="http://plmd.me/" target="_blank">plmd.me</a> <br>Hugo port by: <a href="https://github.com/saey55" target="_blank">saey55</a>'

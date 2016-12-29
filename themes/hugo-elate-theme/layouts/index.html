@@ -21,26 +21,33 @@
         {{ partial "intro.html" .}}
 
 
-        {{ if .Site.Params.about.enable }}
-            {{ partial "about.html" .}}
-        {{ end }}        
-
-
-
         {{ if .Site.Params.work.enable }}
             {{ partial "work.html" .}}
         {{ end }}
 
 
+        {{ if .Site.Params.about.enable }}
+            {{ partial "about.html" .}}
+        {{ end }}        
 
-		{{ if .Site.Params.testimonials.enable }}
+        {{ if .Site.Params.advisors.enable }}
+            {{ partial "advisors.html" .}}
+        {{ end }}  
+
+
+
+<!-- 		{{ if .Site.Params.testimonials.enable }}
         	{{ partial "testimonials.html" .}}
-		{{ end }}
+		{{ end }} -->
 
-		{{ if .Site.Params.services.enable }}
+<!-- 		{{ if .Site.Params.services.enable }}
         	{{ partial "services.html" .}}
-		{{ end }}
+		{{ end }} -->
 
+
+        {{ if .Site.Params.sponsorship.enable }}
+            {{ partial "sponsorship.html" .}}
+        {{ end }}
 
 		{{ if .Site.Params.counters.enable }}
         	{{ partial "counters.html" .}}
