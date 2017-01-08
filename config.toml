@@ -1,6 +1,6 @@
 # Page settings
 baseurl = "localhost:1313"
-title = "SFU Satellite Design Club"
+title = "SFU Satellite Design Team"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
 
@@ -9,15 +9,15 @@ theme = "hugo-elate-theme"
   # Meta
   author = "Tim Nosov"
   description = ""
-  email = ""
+  email = "timnosov@gmail.com"
   # Navigation
   [params.navigation]
-    brand = "SFU Satellite Design Club"
+    brand = "SFU Satellite Design Team"
     home = "Home"
-    work = "Work"
-    testimonials = "Testimonials"
-    services = "Services"
-    about = "About"
+    mission = "Mission"
+    projects = "Projects"
+    subsystems = "Subsystems"
+    sponsorship = "Sponsorship"
     contact = "Contact"
 
     # You can add custom links before or after the default links
@@ -25,8 +25,8 @@ theme = "hugo-elate-theme"
     
     # prepended links
     #[[menu.prepend]]
-    #  url = "http://gohugo.io"
-    #  name = "Hugo"
+    #  url = "/"
+    #  name = "Home"
     #  weight = 10
 
     # postpended links
@@ -40,14 +40,15 @@ theme = "hugo-elate-theme"
     title = "Let's build a satellite."
     subtitle = "What's more challenging, exciting and rewarding than designing, building and launching a satellite?"
  
-  # Hero section
+  # About us section
   [params.hero_about_us]
     title = "Our Mission"
-    subtitle = "Improving our skills, learning about space, contributing to science. We are building a payload to calibrate a radio telescope. <a>Learn more about our mission. </a>"
+    subtitle = "SFU Satellite Design Team is a club run by space enthusiasts from the Simon Fraser University. We aim to inspire future generations of space explorers, engineers, and business leaders through innovation and teamwork. <br><br> We are building a satellite to help CHIME radio telescope in investigating the expansion of the universe and the influence of dark energy. <a href='mission'>Learn more about our payload. </a>"
 
 
   # Hero section
   [params.hero_projects]
+    enable = true
     title = "Projects"
     subtitle = "We are working on many projects. Our main project is a 3U cubesat, but we also build and launch weather balloons, train future astronauts, do outreach and much more. </a>"
 
@@ -60,7 +61,7 @@ theme = "hugo-elate-theme"
   [[params.intro.item]]
     title = "Cubesat"
     description = "We are building a 3U cubesat to participate in the Canadian Satellite Design Challenge."
-    url = "#"
+    url = "mission"
     button = "SFUSAT"
     icon = "icon-rocket"
     img = "img_7.jpg"
@@ -68,7 +69,7 @@ theme = "hugo-elate-theme"
   [[params.intro.item]]
     title = "Weather Balloons"
     description = "We've launched a weather balloon and plan to launch more to test the satellite and perform scientific experiments."
-    url = "#"
+    url = "high-altitude-weather-balloon"
     button = "SFU Balloon"
     icon = "icon-arrow-up-circle"
     img = "img_8.jpg"
@@ -92,44 +93,45 @@ theme = "hugo-elate-theme"
   [params.work]
     enable = true
     title = "Subsystems"
-    description = "Learn more about our teams:"
+    description = "Learn what each subsystem does, the latest updates and join a subsystem:"
     footertext = ''
 
     [[params.work.row]]
       img = "work_1.jpg"
       alt = "Image2"
       title = "RF"
-      subtitle = ""
+      subtitle = "The RF subsystem is in charge of communication between the ground and the spacecraft."
 
     [[params.work.row]]
       img = "work_2.jpg"
       alt = "Image2"
       title = "Power"
-      subtitle = "Design"
+      subtitle = "The power subsystem works on designing power harvesting, power storage and power distribution architectures."
 
     [[params.work.row]]
       img = "work_3.jpg"
       alt = "Image3"
       title = "Structural"
-      subtitle = "Design"
+      subtitle = "The structural subsystem design the mechanical structure of the satellite."
 
-    [[params.work.row]]
+    [[params.work.row2]]
       img = "work_4.jpg"
+      link = "subsystem/adcs/"
       alt = "Image4"
       title = "ADCS"
-      subtitle = "Design"
+      subtitle = "The Attitude Determination and Control System (ADCS) subsystem is responsible for maintaining the orientation of the spacecraft to allow for radio transmissions, maximum power generation via solar panels, detumbling and nadir pointing. Learn more."
 
-    [[params.work.row]]
+    [[params.work.row2]]
       img = "work_5.jpg"
       alt = "Image5"
       title = "Computing"
-      subtitle = "Design"
+      subtitle = "Computing subsystem is in charge of onboard computer architecture and all onboard processing."
 
-    [[params.work.row]]
+    [[params.work.row2]]
       img = "work_6.jpg"
       alt = "Image6"
-      title = "Structural"
-      subtitle = "Design"
+      title = "Sensors and Health Monitoring"
+      subtitle = "The Sensors and Health Monitoring subsystem designs attitude determination sensors, positional sensors and health monitoring sensors."
 
   # Testimonials section
   [params.testimonials]
@@ -182,14 +184,17 @@ theme = "hugo-elate-theme"
   [params.sponsorship]
     enable = true
     title = "Sponsorship"
-    description = "Help us make our projects happen. We are looking for collaborations, sponsorship and donations."
+    description = "Help us make our projects happen. We are looking for collaborations, sponsorship and donations"
+
+    title2 = "Our Sponsors"
+    description2 = ""
 
 
   # About section
   [params.about]
     enable = true
     title = "Executive Team"
-    description = "We are a group of people excited about space exploration and engineering. We want to be a part of the upcoming space revolution."
+    description = "We are a group of people excited about space exploration, engineering,science and business. We want to be a part of the upcoming space revolution. <a href='team'> <br>Get to know the team. </a>"
 
     [[params.about.item]]
       name = "Tim Nosov"
@@ -254,7 +259,7 @@ theme = "hugo-elate-theme"
 
 
     [[params.advisors.item]]
-      name = "Dr. Murzuk"
+      name = "Dr. Marzouk"
       position = "Advisor"
       description = ""
       img = "person2.jpg"
@@ -331,4 +336,4 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; SFU Satellite Design Club. <br>Theme created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a>, <a href="http://plmd.me/" target="_blank">plmd.me</a> <br>Hugo port by: <a href="https://github.com/saey55" target="_blank">saey55</a>'
+    copyright = '&copy; SFU Satellite Design Team. <br>Theme created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a>'

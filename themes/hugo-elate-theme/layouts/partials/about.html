@@ -1,4 +1,4 @@
-	<section id="fh5co-home" data-section="home">
+	<section id="fh5co-home" data-section="home" style='height: 300px'>
 		<!-- <div class="gradient"></div> -->
 			<div class="container">
 				<div class="row">
@@ -11,35 +11,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-				{{ range .Site.Params.about.item }}
-					<div class="col-md-4">
-						<div class="fh5co-person text-center to-animate">
-							<figure><img src="images/{{ .img }}" alt="{{ .alt }}"></figure>
-							<h3>{{ .name | markdownify }}</h3>
-							<span class="fh5co-position">{{ .position | markdownify }}</span>
-							</ul>
-						</div>
-					</div>
-				{{ end }}
-				</div>
-
-
-				<div class="row">
-				{{ range .Site.Params.about.item1 }}
-					<div class="col-md-4">
-						<div class="fh5co-person text-center to-animate">
-							<figure><img src="images/{{ .img }}" alt="{{ .alt }}"></figure>
-							<h3>{{ .name | markdownify }}</h3>
-							<span class="fh5co-position">{{ .position | markdownify }}</span>
-							</ul>
-						</div>
-					</div>
-				{{ end }}
-				</div>
-
-
-
 			</div>
 		<!-- </div>	 -->
 	</section>
