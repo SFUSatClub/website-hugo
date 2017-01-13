@@ -1,5 +1,4 @@
 # Page settings
-baseurl = "localhost:1313"
 title = "SFU Satellite Design Team"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
@@ -38,7 +37,7 @@ theme = "hugo-elate-theme"
   # Hero section
   [params.hero]
     title = "Let's build a satellite."
-    subtitle = "What's more challenging, exciting and rewarding than designing, building and launching a satellite?"
+    subtitle = "SFU Satellite Design Team"
  
   # About us section
   [params.hero_about_us]
@@ -50,7 +49,7 @@ theme = "hugo-elate-theme"
   [params.hero_projects]
     enable = true
     title = "Projects"
-    subtitle = "We are working on many projects. Our main project is a 3U cubesat, but we also build and launch weather balloons, train future astronauts, do outreach and much more. </a>"
+    subtitle = "Our main focus is on designing and building a 3U cubesat, but we also build and launch weather balloons, train future astronauts, do outreach and much more. </a>"
 
 
 
@@ -77,7 +76,7 @@ theme = "hugo-elate-theme"
   [[params.intro.item]]
     title = "Other"
     description = "We run workshops, amateur radio club, astronaut corps and many more initiatives"
-    url = "#"
+    url = "outreach"
     button = "Learn more"
     icon = "icon-shuffle"
     img = "img_10.jpg"
@@ -93,7 +92,7 @@ theme = "hugo-elate-theme"
   [params.work]
     enable = true
     title = "Subsystems"
-    description = "Learn what each subsystem does, the latest updates and join a subsystem:"
+    description = "Designing and building a  satellite in an ambitious project. To make our work efficient, we are organized into subsystems, each focusing on a different area. Most of the technical work is done on the subsystem level, so click on the subsystems to find out what each subsystem does, the latest updates and how to join a subsystem."
     footertext = ''
 
     [[params.work.row]]
@@ -117,9 +116,10 @@ theme = "hugo-elate-theme"
     [[params.work.row2]]
       img = "work_4.jpg"
       link = "subsystem/adcs/"
+      link_active = true
       alt = "Image4"
       title = "ADCS"
-      subtitle = "The Attitude Determination and Control System (ADCS) subsystem is responsible for maintaining the orientation of the spacecraft to allow for radio transmissions, maximum power generation via solar panels, detumbling and nadir pointing. Learn more."
+      subtitle = "The Attitude Determination and Control System (ADCS) subsystem is responsible for maintaining the orientation of the spacecraft to allow for radio transmissions, maximum power generation via solar panels, detumbling and nadir pointing. Click to learn more."
 
     [[params.work.row2]]
       img = "work_5.jpg"
@@ -163,22 +163,46 @@ theme = "hugo-elate-theme"
   # Services section
   [params.services]
     enable = true
-    title = "Services"
-    description = "We love collaboration. Get in touch with us to work on any of the following."
+    title = "Subsystems"
+    description = "Designing and building a  satellite in an ambitious project. To make our work efficient, we are organized into subsystems, each focusing on a different area. Most of the technical work is done on the subsystem level, so click on the subsystems to find out what each subsystem does, the latest updates and how to join a subsystem."
 
     [[params.services.item]]
-      title = "Education &amp; Outreach"
-      description = "Inspiring and education is our main goal. We have organized and participated in countless outreach opportunities. "
-      icon = "icon-book-open"
+      title = "RF"
+      description = "The RF subsystem is in charge of communication between the ground and the spacecraft."
+      icon = "icon-feed"
+
 
     [[params.services.item]]
-      title = "Satellite Design"
-      description = "While we are only starting we have already learned a lot about what it takes to build a satellite."
-      icon = "icon-rocket"
+      title = "Power"
+      description = "The power subsystem works on designing power harvesting, power storage and power distribution architectures."
+      icon = "icon-energy"
+
     [[params.services.item]]
-      title = "Weather Balloons"
-      description = "We've already built and launched Latobius - a scientific and technology demostration weather balloon and more weather balloon launches are in the works."
-      icon = "icon-globe"
+      title = "Structural"
+      description = "The structural subsystem design the mechanical structure of the satellite."
+      icon = "icon-frame"
+
+
+
+
+
+    [[params.services.item]]
+      title = "ADCS"
+      description = "The Attitude Determination and Control System (ADCS) subsystem is responsible for maintaining the orientation of the spacecraft to allow for radio transmissions, maximum power generation via solar panels, detumbling and nadir pointing. <a href='subsystem/adcs/' style='color:black;'>Click to learn more.</a>"
+      icon = "icon-compass"
+
+
+    [[params.services.item]]
+      title = "Computing"
+      description = "Computing subsystem is in charge of onboard computer architecture and all onboard processing."
+      icon = "icon-calculator"
+
+    [[params.services.item]]
+      title = "Sensors and Health Monitoring"
+      description = "The Sensors and Health Monitoring subsystem designs attitude determination sensors, positional sensors and health monitoring sensors."
+      icon = "icon-camrecorder"
+
+
 
   # Sponsorship section
   [params.sponsorship]
@@ -251,27 +275,27 @@ theme = "hugo-elate-theme"
     description = "We are proud to be supported by experts in industry and academia."
 
     [[params.advisors.item]]
-      name = "Dr. Oldknow"
+      name = "Dr. Kevin Oldknow"
       position = "Strategic Advisor"
       description = ""
-      img = "person1.jpg"
-      alt = "Person1"
+      img = "supervisors/kevin-oldknow.jpeg"
+      alt = "Dr. Kevin Oldknow"
 
 
     [[params.advisors.item]]
-      name = "Dr. Marzouk"
+      name = "Dr. Amr Marzouk"
       position = "Advisor"
-      description = ""
-      img = "person2.jpg"
-      alt = "Person2"
+      description = "Technical Advisor"
+      img = "supervisors/amr-marzouk.jpg"
+      alt = "Dr. Amr Marzouk"
 
 
     [[params.advisors.item]]
-      name = ""
-      position = "Advisor"
+      name = "Dr. Rodney Vaughan"
+      position = "RF Advisor"
       description = ""
-      img = "person3.jpg"
-      alt = "Person3"
+      img = "supervisors/rodney-vaughan.jpg"
+      alt = "Dr. Rodney Vaughan"
 
 
   # Counters section
@@ -336,4 +360,4 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; SFU Satellite Design Team. <br>Theme created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a>'
+    copyright = '&copy; SFU Satellite Design Team.'

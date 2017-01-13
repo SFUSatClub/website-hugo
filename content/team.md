@@ -1,8 +1,10 @@
 +++
-title = "team"
+title = "Team"
 date = "2017-01-07T18:30:12-08:00"
 
 +++
+
+<div class="row"><br><div>
 
 <div class="row">
 	<div class="col-md-4">
@@ -31,6 +33,7 @@ date = "2017-01-07T18:30:12-08:00"
 	</div>
 </div>
 
+<div class="row"><br><div>
 
 <div class="row">
 	<div class="col-md-4">
@@ -59,6 +62,7 @@ date = "2017-01-07T18:30:12-08:00"
 	</div>
 </div>
 
+<div class="row"><br><div>
 
 <div class="row">
 	<div class="col-md-4">
@@ -87,6 +91,7 @@ date = "2017-01-07T18:30:12-08:00"
 	</div>
 </div>
 
+<div class="row"><br><div>
 
 <div class="row">
 	<div class="col-md-4">
@@ -100,8 +105,38 @@ date = "2017-01-07T18:30:12-08:00"
 	<div class="col-md-4">
 		<div class="fh5co-person text-center">
 			<figure><img src= "http://localhost:1313/person1.jpg" alt="{{ .alt }}"></figure>
+			<h3>Nell Du</h3>
+			<span class="fh5co-position">Power Team Lead</span>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="fh5co-person text-center">
+			<figure><img src= "http://localhost:1313/person1.jpg" alt="{{ .alt }}"></figure>
 			<h3>Cameron Jinks</h3>
 			<span class="fh5co-position">ADCS Team Lead</span>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="row"><br><div>
+
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="fh5co-person text-center">
+			<figure><img src= "http://localhost:1313/person1.jpg" alt="{{ .alt }}"></figure>
+			<h3>Harrison Handley</h3>
+			<span class="fh5co-position">ADCS Team Lead</span>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="fh5co-person text-center">
+			<figure><img src= "http://localhost:1313/person1.jpg" alt="{{ .alt }}"></figure>
+			<h3>Lana Borkovkina</h3>
+			<span class="fh5co-position">Sensors and Health Monitoring Team Lead</span>
 			</ul>
 		</div>
 	</div>
@@ -114,3 +149,6 @@ date = "2017-01-07T18:30:12-08:00"
 		</div>
 	</div>
 </div>
+
+{{< instagram BJbWA46j1QH >}}
+

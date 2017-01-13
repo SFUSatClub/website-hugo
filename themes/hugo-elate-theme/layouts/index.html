@@ -12,6 +12,7 @@
 
 		{{ partial "hero.html" .}}
 
+
         {{ partial "hero_about_us.html" .}}
 
         {{ partial "hero_projects.html" .}}
@@ -21,9 +22,13 @@
         {{ partial "intro.html" .}}
 
 
-        {{ if .Site.Params.work.enable }}
-            {{ partial "work.html" .}}
+       {{ if .Site.Params.services.enable }}
+            {{ partial "services.html" .}}
         {{ end }}
+
+<!--         {{ if .Site.Params.work.enable }}
+            {{ partial "work.html" .}}
+        {{ end }} -->
 
 
         {{ if .Site.Params.about.enable }}
@@ -40,18 +45,14 @@
         	{{ partial "testimonials.html" .}}
 		{{ end }} -->
 
-<!-- 		{{ if .Site.Params.services.enable }}
-        	{{ partial "services.html" .}}
-		{{ end }} -->
-
 
         {{ if .Site.Params.sponsorship.enable }}
             {{ partial "sponsorship.html" .}}
         {{ end }}
 
-		{{ if .Site.Params.counters.enable }}
+<!-- 		{{ if .Site.Params.counters.enable }}
         	{{ partial "counters.html" .}}
-        {{ end }}
+        {{ end }} -->
 
 		{{ if .Site.Params.contact.enable }}
         	{{ partial "contact.html" .}}

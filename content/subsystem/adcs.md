@@ -14,3 +14,7 @@ Currently, the ADCS subsystem is working on the following tasks.
 
 * The Attitude Determination system is being modeled in STK and MATLAB to develop the algorithm to determine the satellite's orientation with respect to Earth from raw sun sensor and solar panel data.
 For further information or interest in working on developing the Attitude Determination and Control System for CHIME Calibration system please contact Harrison Handley at hhandley [at] sfu [dot ] ca or Cameron Jinks at cjinks [at] sfu [dot] ca.
+
+
+{{< instagram BO_aemMDfZ9 >}}
+
