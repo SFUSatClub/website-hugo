@@ -83,7 +83,7 @@ date = "2017-01-07T18:30:12-08:00"
 	</div>
 	<div class="col-md-4">
 		<div class="fh5co-person text-center">
-			<figure><img src= "{{< siteurl>}}Execs/person1.jpg" alt="{{ .alt }}"></figure>
+			<figure><img src= "{{< siteurl>}}person1.jpg" alt="{{ .alt }}"></figure>
 			<h3>Max Fischer</h3>
 			<span class="fh5co-position">Structural Team Lead</span>
 			</ul>
