@@ -96,7 +96,7 @@ footer {
 }
 
 #section-one {
-	background-image: url("{{ "/imgs/earth_from_moon_small.jpg" | relURL }}");
+	background-image: url("../imgs/earth_from_moon_small.jpg");
 	background-position-x: 50%;
 	height: 100vh!important;
 }
@@ -108,7 +108,7 @@ footer {
 }
 
 #section-two {
-	background-image: url("{{ "/imgs/canada_arm.jpeg" | relURL }}");
+	background-image: url("../imgs/canada_arm.jpeg");
 }
 
 .gradient {
