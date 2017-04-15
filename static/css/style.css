@@ -1,0 +1,172 @@
+/* html, body, div, span, applet, object, iframe, */
+/* h1, h2, h3, h4, h5, h6, p, blockquote, pre, */
+/* a, abbr, acronym, address, big, cite, code, */
+/* del, dfn, em, font, img, ins, kbd, q, s, samp, */
+/* small, strike, strong, sub, sup, tt, var, */
+/* b, u, i, center, */
+/* dl, dt, dd, ol, ul, li, */
+/* fieldset, form, label, legend, */
+/* table, caption, tbody, tfoot, thead, tr, th, td { */
+/* 	background: transparent; */
+/* 	border: 0; */
+/* 	margin: 0; */
+/* 	padding: 0; */
+/* vertical-align: baseline; } */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: #1e1e1e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #fff;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #000;
+	z-index: 999;
+	transition: all 0.3s;
+}
+#header.smaller {
+	height: 60px;
+}
+#header.smaller nav {
+	height: 60px
+}
+
+#nav {
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-around;
+	transition: all 0.3s;
+}
+.nav-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 0.3s;
+}
+.nav-brand {
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+}
+.nav-bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.nav-bar ul {
+	display: flex;
+	margin: 0;
+}
+.nav-bar li {
+	list-style: none outside none; 
+	margin-bottom: 0;
+}
+.nav-bar li a {
+	padding: 0px 15px;
+	color: #fff;
+}
+
+#main {
+}
+
+footer {
+	min-height: 100px;
+	padding: 20px;
+	background-color: #000;
+}
+
+#main > section {
+	position: relative;
+	background-size: cover;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#section-one {
+	background-image: url("/imgs/earth_from_moon_small.jpg");
+	background-position-x: 50%;
+	height: 100vh!important;
+}
+#section-one .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#section-two {
+	background-image: url("/imgs/canada_arm.jpeg");
+}
+
+.gradient {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: .5;
+	background-color: #000;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* Fade out the nav-header on small screens */
+@media all and (max-width: 1000px) {
+	#header {
+		padding-top: 15px;
+		height: auto;
+	}
+	#nav {
+		flex-direction: column;
+		height: 80px;
+	}
+	.nav-header {
+		flex-direction: row;
+	}
+	.nav-bar {
+		flex-direction: row;
+	}
+	#header.smaller {
+		height: 50px;
+	}
+	#header.smaller .nav-header {
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+	}
+	#header.smaller nav {
+		height: 0;
+	}
+}
+
+/* Make nav bar scrollable on mobile */
+@media all and (max-width: 450px) {
+	#nav {
+		height: 60px;
+	}
+	.nav-brand {
+		font-size: 18px;
+	}
+	.nav-bar {
+		justify-content: normal;
+		overflow-x: scroll;
+	}
+	#header.smaller nav {
+		height: auto;
+	}
+}
