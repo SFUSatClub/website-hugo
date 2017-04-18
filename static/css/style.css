@@ -13,17 +13,16 @@
 /* 	padding: 0; */
 /* vertical-align: baseline; } */
 
-html, body {
-	height: 100%;
-}
-
 body {
 	margin: 0;
 	background-color: #1e1e1e;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
 	color: #fff;
+}
+a {
+	transition: all 0.3s;
 }
 
 #header {
@@ -34,19 +33,19 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 999;
 	transition: all 0.3s;
 }
-#header.smaller {
-	height: 60px;
-}
 #header.smaller nav {
 	height: 60px
 }
 
 #nav {
-	height: 120px;
+	height: 110px;
 	display: flex;
 	justify-content: space-between;
-	align-content: space-around;
 	transition: all 0.3s;
+}
+/* #header height + #nav height, not affected by .smaller */
+.nav-offset {
+	padding-top: 110px;
 }
 .nav-header {
 	display: flex;
@@ -74,13 +73,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-bar li a {
 	padding: 0px 15px;
-	color: #fff;
+}
+.nav-bar li a:hover, a:hover {
+	/* dark blue */
+	color: #2f508e;
+	/* blue */
+	/* color: #4183c4; */
+	/* light blue */
+	/* color: #1baae2; */
 }
 
 #main {
+	min-height: 100vh;
+	/* main's padding-bottom needs to match the footer's height  */
+	padding-bottom: 100px;
 }
-
 footer {
+	margin-top: -100px;
 	min-height: 100px;
 	padding: 20px;
 	background-color: #000;
@@ -94,6 +103,13 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 }
+section a {
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+}
+section a:hover {
+	color: #000;
+}
+
 
 #section-one {
 	background-image: url("../imgs/earth_from_moon_small.jpg");
@@ -111,6 +127,9 @@ footer {
 	background-image: url("../imgs/canada_arm.jpeg");
 }
 
+#section-three {
+}
+
 .gradient {
 	position: absolute;
 	top: 0;
@@ -126,14 +145,17 @@ footer {
 }
 
 /* Fade out the nav-header on small screens */
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1050px) {
 	#header {
 		padding-top: 15px;
-		height: auto;
 	}
 	#nav {
 		flex-direction: column;
+		justify-content: initial;
 		height: 80px;
+	}
+	.nav-offset {
+		padding-top: calc(15px + 80px);
 	}
 	.nav-header {
 		flex-direction: row;
@@ -158,6 +180,9 @@ footer {
 @media all and (max-width: 450px) {
 	#nav {
 		height: 60px;
+	}
+	.nav-offset {
+		padding-top: calc(15px + 60px);
 	}
 	.nav-brand {
 		font-size: 18px;
