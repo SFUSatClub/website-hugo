@@ -144,6 +144,13 @@ section a:hover {
 	text-align: center;
 }
 
+/* static pages */
+.nav-offset section {
+	padding-top: 2.0rem;
+}
+
+
+
 /* Fade out the nav-header on small screens */
 @media all and (max-width: 1050px) {
 	#header {
