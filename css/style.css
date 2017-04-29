@@ -15,7 +15,8 @@
 
 body {
 	margin: 0;
-	background-color: #1e1e1e;
+	color: #fff;
+	background-color: #0a1423;
 }
 
 h1, h2, h3, h4, h5, h6, a {
@@ -149,6 +150,18 @@ section a:hover {
 	padding-top: 2.0rem;
 }
 
+/* sponsors page */
+.sponsors {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.sponsors > img {
+	margin: 15px;
+	width: 300px;
+	height: 100%;
+}
 
 
 /* Fade out the nav-header on small screens */
