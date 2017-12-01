@@ -113,8 +113,8 @@ date = "2017-01-07T18:30:12-08:00"
 	<div class="col-md-4">
 		<div class="fh5co-person text-center">
 			<figure><img src= "{{< siteurl>}}person1.jpg" alt="{{ .alt }}"></figure>
-			<h3>You!</h3>
-			<span class="fh5co-position">Join us!</span>
+			<h3>Michael Godinho</h3>
+			<span class="fh5co-position">At-large Representative</span>
 			</ul>
 		</div>
 	</div>
