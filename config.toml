@@ -8,7 +8,7 @@ theme = "hugo-elate-theme"
   # Meta
   author = "Tim Nosov"
   description = ""
-  email = "timnosov@gmail.com"
+  email = "SFUSat@sfu.ca"
   # Navigation
   [params.navigation]
     brand = "SFU Satellite Design Team"
@@ -346,8 +346,7 @@ theme = "hugo-elate-theme"
     # Available icons: http://simplelineicons.com/
     details = [
         ["icon-home", "8888 University Dr, Burnaby, BC V5A 1S6, <br> Canada"],
-        ["icon-phone", "(604) 3541957"],
-        ["icon-envelope", "tnosov@sfu.ca"],
+        ["icon-envelope", "SFUsat@sfu.ca"],
         ["icon-globe", '<a href="sfusat.com/" target="_blank">sfusat.com</a>']
       ]
 
